@@ -13,14 +13,11 @@ const Home=({navigation})=>{
             {
                 arr.map((element)=>{
                     return(
-                        <TouchableOpacity onPress={()=>{
-                            presser(element.id);
-                        }}>
+                        
                         <View style={style.item} key={element.id}>
                             <Text style={style.title}>Title:{element.title}</Text>
                             <Text style={style.description}>Description:{element.desc}</Text>
                         </View>
-                        </TouchableOpacity>
                     )
                 })
             }
